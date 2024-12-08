@@ -3,7 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import SubHeader from "./SubHeader/SubHeader";
-import MyContext from "@/app/Context/MyContext";
+import MyContext from "../app/Context/MyContext";
 import ContentBox from "./ContentBox/ContentBox";
 
 function LandingPage() {

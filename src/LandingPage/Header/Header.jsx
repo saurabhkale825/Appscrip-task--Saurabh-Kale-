@@ -8,7 +8,7 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import MenuTwoToneIcon from "@mui/icons-material/MenuTwoTone";
 import Image from "next/image";
 import Link from "next/link";
-import MyContext from "@Linkpp/Context/MyContext";
+import MyContext from "../../app/Context/MyContext";
 import Logo from "../../Local/Logo.png";
 
 const Header = () => {

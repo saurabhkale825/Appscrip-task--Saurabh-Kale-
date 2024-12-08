@@ -1,5 +1,5 @@
 
-import LandingPage from "@/LandingPage/LandingPage";
+import LandingPage from "../LandingPage/LandingPage";
 import  "./page.css";
 
 
