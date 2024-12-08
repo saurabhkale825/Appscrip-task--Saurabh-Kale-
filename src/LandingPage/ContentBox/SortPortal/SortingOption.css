@@ -1,0 +1,59 @@
+/* SortingOptions.css */
+
+.portal-overlay {
+    position: absolute;
+    top: 75%; 
+    left: 78%;
+    width: 20%;
+    height: 20%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .portal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .portal-header {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .sorting-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option {
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option + .option {
+    border-top: 1px solid #eee;
+  }
+  
+  .option.selected {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .option .checkmark {
+    margin-right: 8px;
+    color: black;
+  }
+  

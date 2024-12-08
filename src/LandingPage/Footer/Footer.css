@@ -1,0 +1,187 @@
+
+
+/* General Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Newsletter Section */
+.newsletter {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.newsletter h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #333;
+  background-color: #111;
+  color: #fff;
+  outline: none;
+}
+
+.newsletter-input input::placeholder {
+  color: #666;
+}
+
+.newsletter-input button {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-input button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Quick Links */
+.quick-links,
+.metta-muse {
+  flex: 1;
+  margin: 20px;
+}
+
+.quick-links h4,
+.metta-muse h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.quick-links ul,
+.metta-muse ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li,
+.metta-muse li {
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.quick-links li:hover,
+.metta-muse li:hover {
+  color: #999;
+}
+
+/* Follow Us */
+.follow-us {
+  margin: 20px;
+  text-align: left;
+}
+
+.follow-us h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons span {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Payment Icons */
+.payment-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.payment-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter,
+  .contact-info,
+  .metta-muse,
+  .quick-links,
+  .follow-us {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-input {
+    flex-direction: column;
+  }
+
+  .newsletter-input input,
+  .newsletter-input button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .payment-icons {
+    justify-content: center;
+  }
+}
+
+
+
