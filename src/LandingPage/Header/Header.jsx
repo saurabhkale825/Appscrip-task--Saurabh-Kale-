@@ -7,8 +7,9 @@ import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import Logo from "../../Local/Logo.png";
 import Image from "next/image";
-import MyContext from "@/app/Context/MyContext";
+import MyContext from "@Linkpp/Context/MyContext";
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
+import Link from 'next/link';
 
 function Header() {
 
@@ -59,19 +60,20 @@ function Header() {
           </div>
         </div>
       </div>
-    { screenSize > 768 ?
-      <nav className="nav-menu">
-        <a href="/shop">Shop</a>
-        <a href="/skills">Skills</a>
-        <a href="/stories">Stories</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact Us</a>
-      </nav>:
-      <nav className="mobile-nav-menu">
-        <a href="/#">Home</a>
-        <a href="/shop">Shop</a>
-        
-      </nav>}
+      {screenSize > 768 ? (
+        <nav className="nav-menu">
+          <Link href="/shop">Shop</Link>
+          <Link href="/skills">Skills</Link>
+          <Link href="/stories">Stories</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact Us</Link>
+        </nav>
+      ) : (
+        <nav className="mobile-nav-menu">
+          <Link href="/">Home</Link>
+          <Link href="/shop">Shop</Link>
+        </nav>
+      )}
 
     </header>
   );

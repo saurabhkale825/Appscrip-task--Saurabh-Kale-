@@ -23,7 +23,7 @@ function NewsLetterSection() {
         <p>
           <span role="img" aria-label="US Flag">
             🇺🇸
-          </span>{" "}
+          </span>
           USD
         </p>
         <p>
