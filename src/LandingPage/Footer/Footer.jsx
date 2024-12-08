@@ -48,6 +48,7 @@ const Footer = memo(() => (
     </p>
   </footer>
 ));
+Footer.displayName = "Footer";
 
 const NewsletterSection = memo(() => (
   <div className="newsletter">
@@ -63,6 +64,7 @@ const NewsletterSection = memo(() => (
     </div>
   </div>
 ));
+NewsletterSection.displayName = "NewsletterSection";
 
 const ContactInfo = memo(() => (
   <div className="contact-info">
@@ -82,6 +84,7 @@ const ContactInfo = memo(() => (
     </p>
   </div>
 ));
+ContactInfo.displayName = "ContactInfo";
 
 const QuickLinks = memo(() => (
   <div className="quick-links">
@@ -97,6 +100,7 @@ const QuickLinks = memo(() => (
     </ul>
   </div>
 ));
+QuickLinks.displayName = "QuickLinks";
 
 const PaymentIcons = memo(() => (
   <div className="payment-icons">
@@ -113,6 +117,7 @@ const PaymentIcons = memo(() => (
     ))}
   </div>
 ));
+PaymentIcons.displayName = "PaymentIcons";
 
 const FollowUs = memo(() => (
   <div className="follow-us">
@@ -123,5 +128,6 @@ const FollowUs = memo(() => (
     </div>
   </div>
 ));
+FollowUs.displayName = "FollowUs";
 
 export default Footer;
