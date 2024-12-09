@@ -28,7 +28,7 @@ function DataContainer() {
             alt="product-image"
             width={100}
             height={100}
-          />
+          ></Image>
           <div className="individual-product-title">{item.title}</div>
           <div className="individual-product-price">
             <div>${item.price}</div>
