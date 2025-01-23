@@ -1,26 +1,15 @@
-// components/SortingOptionsPortal.js
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
+import MyContext from "@/app/Context/MyContext";
+import React, { useContext } from "react";
 import "./SortingOption.css";
 
-const SortingOptionsPortal = ({ selectedOption, onOptionChange, onClose }) => {
-  const portalRoot = document.getElementById("portal-root");
-
-  useEffect(() => {
-    const handleEscape = (event) => {
-      if (event.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", handleEscape);
-
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-    };
-  }, [onClose]);
-
-  if (!portalRoot) return null;
-
-  return ReactDOM.createPortal(
-    <div className="portal-overlay" onClick={onClose}>
+const SortingOptions = ({ selectedOption, onOptionChange, onClose }) => {
+  const { isSortingVisible, setIsSortingVisible } = useContext(MyContext);
+  return (
+    <div
+      className="portal-overlay"
+      style={{ display: isSortingVisible ? "block" : "none" }}
+      onClick={onClose}
+    >
       <div className="portal-content" onClick={(e) => e.stopPropagation()}>
         <h3 className="portal-header">Sort By</h3>
         <div className="sorting-options">
@@ -46,9 +35,8 @@ const SortingOptionsPortal = ({ selectedOption, onOptionChange, onClose }) => {
           ))}
         </div>
       </div>
-    </div>,
-    portalRoot
+    </div>
   );
 };
 
-export default SortingOptionsPortal;
+export default SortingOptions;

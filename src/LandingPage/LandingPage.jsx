@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import SubHeader from "./SubHeader/SubHeader";

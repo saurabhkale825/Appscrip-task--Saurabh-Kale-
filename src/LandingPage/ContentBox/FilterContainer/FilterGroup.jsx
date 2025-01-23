@@ -5,7 +5,6 @@ const FilterGroup = ({ title, children }) => {
   const { isFilterVisible, setIsFilterVisible } = useContext(MyContext);
   return (
     <div style={{ borderBottom: "1px solid #ccc", marginBottom: "10px" }}>
-      {/* Filter Header */}
       <div
         style={{
           display: "flex",
@@ -20,7 +19,6 @@ const FilterGroup = ({ title, children }) => {
         <span>{isFilterVisible ? "▲" : "▼"}</span>
       </div>
 
-      {/* Filter Content */}
       {isFilterVisible && <div style={{ padding: "10px 0" }}>{children}</div>}
     </div>
   );

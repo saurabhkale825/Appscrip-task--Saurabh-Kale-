@@ -1,59 +1,97 @@
-/* SortingOptions.css */
-
 .portal-overlay {
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  width: 20%;
+  background-color: transparent;
+  z-index: 999;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.portal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.portal-header {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sorting-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 10px 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option + .option {
+  border-top: 1px solid #eee;
+}
+
+.option.selected {
+  font-weight: bold;
+  color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.option .checkmark {
+  margin-right: 8px;
+  color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .portal-overlay {
     position: absolute;
-    top: 75%; 
-    left: 78%;
+    top: 100%;
+    left: 70%;
     width: 20%;
-    height: 20%;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .portal-content {
-    background: white;
+    background-color: transparent;
+    z-index: 999;
+    padding: 10px;
+    box-sizing: border-box;
     border-radius: 8px;
-    padding: 16px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease-in-out;
   }
-  
-  .portal-header {
-    margin-bottom: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .sorting-options {
-    display: flex;
-    flex-direction: column;
-  }
-  
+
   .option {
-    padding: 10px 8px;
+    padding: 10px 1px;
     font-size: 14px;
     color: #333;
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  
-  .option + .option {
-    border-top: 1px solid #eee;
+
+  .portal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 20vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
   }
-  
-  .option.selected {
-    font-weight: bold;
+
+  .option {
     color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
-  
-  .option .checkmark {
-    margin-right: 8px;
-    color: black;
-  }
-  
+}

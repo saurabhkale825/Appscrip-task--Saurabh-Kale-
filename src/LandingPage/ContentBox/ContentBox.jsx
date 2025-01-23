@@ -13,7 +13,6 @@ function ContentBox() {
       <FilterBar />
       <div className="content-box-container">
         {isFilterVisible && screenSize > 768 ? <FilterSidebar /> : null}
-
         <DataContainer />
       </div>
     </div>
